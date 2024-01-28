@@ -40,12 +40,6 @@ for (let i = 0; i < questions.length; i++) {
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-// if (candidateAnswer == correctAnswer) {
-//   console.log("Correct");
-// } else {
-//   console.log("Incorrect");
-// }
-// console.log(`You answered: ${candidateAnswers}. The correct answers: are ${correctAnswers}, respectively.`)
 function caseInsensitive(arr) {
   return arr.toLocaleString().toLowerCase().split(",");
 }
@@ -68,7 +62,7 @@ for (let i =0; i < correctAnswers.length; i++) {
   return grade;
 
   if (grade > 80) {
-    console.log(`You scored ${grade}%. Congratulations, you passed!`);
+    console.log(`You scored ${grade}%. Congratulations, ${candidateName}, you passed!`);
   } else {
     console.log(`You scored ${grade}%. You have failed.`)
   }
