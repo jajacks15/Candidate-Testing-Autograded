@@ -66,7 +66,7 @@ for (let i =0; i < correctAnswers.length; i++) {
   } else {
     console.log(`You scored ${grade}%. You have failed.`)
   }
-}
+} 
 
 function runProgram() {
   askForName();
